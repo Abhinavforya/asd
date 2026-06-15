@@ -8,13 +8,7 @@ const secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY;
 
 console.log('AWS EC2 Test Application');
 console.log('========================\n');
-console.log(`Region: ${region}`);
-console.log(`AWS Credentials Configured: ${accessKeyId ? 'Yes' : 'No'}\n`);
-
-if (!accessKeyId || !secretAccessKey) {
-  console.log('⚠️  AWS credentials not found in environment variables.');
-  console.log('Please configure AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in .env file\n');
-}
+console.log(`Region: ${region}\n`);
 
 // Example: List EC2 instances
 const client = new EC2Client({ region });
