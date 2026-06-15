@@ -2,7 +2,7 @@ require('dotenv').config();
 const { EC2Client, DescribeInstancesCommand } = require('@aws-sdk/client-ec2');
 
 // Configure AWS SDK
-const region = process.env.AWS_REGION || 'us-east-1';
+const region = process.env.AWS_REGION || 'ap-southeast-2';
 const accessKeyId = process.env.AWS_ACCESS_KEY_ID;
 const secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY;
 
