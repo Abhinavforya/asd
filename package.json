@@ -1,0 +1,20 @@
+{
+  "name": "aws-ec2-test",
+  "version": "1.0.0",
+  "description": "Sample application to test AWS EC2 connectivity",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "list-instances": "node scripts/listInstances.js",
+    "describe-instance": "node scripts/describeInstance.js",
+    "run-command": "node scripts/runCommand.js"
+  },
+  "keywords": ["aws", "ec2"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-ec2": "^3.400.0",
+    "@aws-sdk/client-ssm": "^3.400.0",
+    "dotenv": "^16.3.1"
+  }
+}
